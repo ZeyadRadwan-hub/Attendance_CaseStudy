@@ -5,6 +5,10 @@ namespace New_Project_Atten
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+             builder.Services.AddScoped<IStudent, StudentRepo>();
+             builder.Services.AddScoped<ISubject, SubjectRepo>();
+             builder.Services.AddScoped<IAttendance, AttendanceRepo>();
+             builder.Services.AddDbContext<Context>();
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
