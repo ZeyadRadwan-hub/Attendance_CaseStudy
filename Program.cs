@@ -1,3 +1,6 @@
+using New_Project_Atten.Models;
+using New_Project_Atten.Repo.Implementation;
+using New_Project_Atten.Repo.Interface;
 namespace New_Project_Atten
 {
     public class Program
